@@ -1,0 +1,12 @@
+---
+title: "Chapter 1"
+output: html_notebook
+---
+
+# Matrix Arithmetic
+
+```{r setup, include=FALSE}
+library(tidyverse)
+theme_set(theme_minimal())
+```
+
