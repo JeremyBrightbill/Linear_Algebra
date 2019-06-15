@@ -10,3 +10,44 @@ library(tidyverse)
 theme_set(theme_minimal())
 ```
 
+```{r}
+a <- matrix(c(1, -2, 3, 0), nrow = 2)
+a
+```
+```{r}
+b <- matrix(c(2, 1, 6, -1, 3, 2), nrow = 2)
+b
+```
+```{r}
+a %*% b
+```
+
+Practice with dimensions
+
+```{r}
+c <- matrix(1:8, nrow = 4)
+c
+```
+```{r}
+d <- matrix(9:14, nrow = 2)
+d
+```
+```{r}
+c %*% d
+```
+```{r}
+c[1,] %*% d[,1]
+```
+```{r}
+c[1,] %*% d[,2]
+```
+etc. 
+
+Powers
+```{r}
+a^2
+```
+```{r}
+a %*% a
+```
+

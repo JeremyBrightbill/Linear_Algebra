@@ -1767,9 +1767,124 @@ $(document).ready(function () {
 <!-- rnb-text-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSA8LSBtYXRyaXgoYygxLCAtMiwgMywgMCksIG5yb3cgPSAyKVxuYVxuYGBgIn0= -->
+<pre class="r"><code>a &lt;- matrix(c(1, -2, 3, 0), nrow = 2)
+a</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl1cblsxLF0gICAgMSAgICAzXG5bMixdICAgLTIgICAgMFxuIn0= -->
+<pre><code>     [,1] [,2]
+[1,]    1    3
+[2,]   -2    0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYiA8LSBtYXRyaXgoYygyLCAxLCA2LCAtMSwgMywgMiksIG5yb3cgPSAyKVxuYlxuYGBgIn0= -->
+<pre class="r"><code>b &lt;- matrix(c(2, 1, 6, -1, 3, 2), nrow = 2)
+b</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXVxuWzEsXSAgICAyICAgIDYgICAgM1xuWzIsXSAgICAxICAgLTEgICAgMlxuIn0= -->
+<pre><code>     [,1] [,2] [,3]
+[1,]    2    6    3
+[2,]    1   -1    2</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSAlKiUgYlxuYGBgIn0= -->
+<pre class="r"><code>a %*% b</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXVxuWzEsXSAgICA1ICAgIDMgICAgOVxuWzIsXSAgIC00ICAtMTIgICAtNlxuIn0= -->
+<pre><code>     [,1] [,2] [,3]
+[1,]    5    3    9
+[2,]   -4  -12   -6</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Practice with dimensions</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYyA8LSBtYXRyaXgoMTo4LCBucm93ID0gNClcbmNcbmBgYCJ9 -->
+<pre class="r"><code>c &lt;- matrix(1:8, nrow = 4)
+c</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl1cblsxLF0gICAgMSAgICA1XG5bMixdICAgIDIgICAgNlxuWzMsXSAgICAzICAgIDdcbls0LF0gICAgNCAgICA4XG4ifQ== -->
+<pre><code>     [,1] [,2]
+[1,]    1    5
+[2,]    2    6
+[3,]    3    7
+[4,]    4    8</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZCA8LSBtYXRyaXgoOToxNCwgbnJvdyA9IDIpXG5kXG5gYGAifQ== -->
+<pre class="r"><code>d &lt;- matrix(9:14, nrow = 2)
+d</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXVxuWzEsXSAgICA5ICAgMTEgICAxM1xuWzIsXSAgIDEwICAgMTIgICAxNFxuIn0= -->
+<pre><code>     [,1] [,2] [,3]
+[1,]    9   11   13
+[2,]   10   12   14</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYyAlKiUgZFxuYGBgIn0= -->
+<pre class="r"><code>c %*% d</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXVxuWzEsXSAgIDU5ICAgNzEgICA4M1xuWzIsXSAgIDc4ICAgOTQgIDExMFxuWzMsXSAgIDk3ICAxMTcgIDEzN1xuWzQsXSAgMTE2ICAxNDAgIDE2NFxuIn0= -->
+<pre><code>     [,1] [,2] [,3]
+[1,]   59   71   83
+[2,]   78   94  110
+[3,]   97  117  137
+[4,]  116  140  164</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY1sxLF0gJSolIGRbLDFdXG5gYGAifQ== -->
+<pre class="r"><code>c[1,] %*% d[,1]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdXG5bMSxdICAgNTlcbiJ9 -->
+<pre><code>     [,1]
+[1,]   59</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY1sxLF0gJSolIGRbLDJdXG5gYGAifQ== -->
+<pre class="r"><code>c[1,] %*% d[,2]</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdXG5bMSxdICAgNzFcbiJ9 -->
+<pre><code>     [,1]
+[1,]   71</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>etc.</p>
+<p>Powers</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYV4yXG5gYGAifQ== -->
+<pre class="r"><code>a^2</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl1cblsxLF0gICAgMSAgICA5XG5bMixdICAgIDQgICAgMFxuIn0= -->
+<pre><code>     [,1] [,2]
+[1,]    1    9
+[2,]    4    0</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYSAlKiUgYVxuYGBgIn0= -->
+<pre class="r"><code>a %*% a</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl1cblsxLF0gICAtNSAgICAzXG5bMixdICAgLTIgICAtNlxuIn0= -->
+<pre><code>     [,1] [,2]
+[1,]   -5    3
+[2,]   -2   -6</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2hhcHRlciAxIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgojIE1hdHJpeCBBcml0aG1ldGljCgpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0KbGlicmFyeSh0aWR5dmVyc2UpCnRoZW1lX3NldCh0aGVtZV9taW5pbWFsKCkpCmBgYAoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiQ2hhcHRlciAxIgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgojIE1hdHJpeCBBcml0aG1ldGljCgpgYGB7ciBzZXR1cCwgaW5jbHVkZT1GQUxTRX0KbGlicmFyeSh0aWR5dmVyc2UpCnRoZW1lX3NldCh0aGVtZV9taW5pbWFsKCkpCmBgYAoKYGBge3J9CmEgPC0gbWF0cml4KGMoMSwgLTIsIDMsIDApLCBucm93ID0gMikKYQpgYGAKYGBge3J9CmIgPC0gbWF0cml4KGMoMiwgMSwgNiwgLTEsIDMsIDIpLCBucm93ID0gMikKYgpgYGAKYGBge3J9CmEgJSolIGIKYGBgCgpQcmFjdGljZSB3aXRoIGRpbWVuc2lvbnMKCmBgYHtyfQpjIDwtIG1hdHJpeCgxOjgsIG5yb3cgPSA0KQpjCmBgYApgYGB7cn0KZCA8LSBtYXRyaXgoOToxNCwgbnJvdyA9IDIpCmQKYGBgCmBgYHtyfQpjICUqJSBkCmBgYApgYGB7cn0KY1sxLF0gJSolIGRbLDFdCmBgYApgYGB7cn0KY1sxLF0gJSolIGRbLDJdCmBgYApldGMuIAoKUG93ZXJzCmBgYHtyfQphXjIKYGBgCmBgYHtyfQphICUqJSBhCmBgYAoK</div>
 
 
 
